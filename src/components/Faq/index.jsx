@@ -59,6 +59,7 @@ const FAQ = () => {
   const searchInputClasses = classNames(
     "w-full px-6 py-3 mb-4 pl-8 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
   );
+  
   const answerClasses = (index) =>
     classNames(
       "p-4 bg-white rounded-md shadow-md mt-2",
