@@ -76,7 +76,7 @@ const FAQ = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
             className={searchInputClasses}
           />
-          <FiSearch className="  text-gray-400 absolute transform -translate-y-1/2 left-2" />
+          <FiSearch className="text-gray-400 absolute transform -translate-y-1/2 left-2" />
         </div>
       </div>
       {filteredQuestions.length === 0 ? (
