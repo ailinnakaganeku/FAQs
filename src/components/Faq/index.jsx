@@ -18,8 +18,10 @@ const FAQ_QUESTIONS = [
     isOpen: false,
   },
   {
-    question: "How do I approach learning new programming languages or technologies?",
-    answer: "When it comes to learning new programming languages or technologies, I take a proactive approach. I begin by researching and gathering relevant resources such as YouTube tutorials, documentation, and articles. Hands-on practice is crucial to me, so I fully immerse myself in coding exercises and personal projects to apply what I learn and gain practical experience. I actively engage with programming communities through Discord server communities. This enables me to exchange knowledge, seek advice, and stay up to date with the latest trends and best practices. Collaborating with fellow developers provides valuable insights and diverse perspectives, fostering a continuous learning environment.",
+    question:
+      "How do I approach learning new programming languages or technologies?",
+    answer:
+      "When it comes to learning new programming languages or technologies, I take a proactive approach. I begin by researching and gathering relevant resources such as YouTube tutorials, documentation, and articles. Hands-on practice is crucial to me, so I fully immerse myself in coding exercises and personal projects to apply what I learn and gain practical experience. I actively engage with programming communities through Discord server communities. This enables me to exchange knowledge, seek advice, and stay up to date with the latest trends and best practices. Collaborating with fellow developers provides valuable insights and diverse perspectives, fostering a continuous learning environment.",
     isOpen: false,
   },
 ];
@@ -57,7 +59,8 @@ const FAQ = () => {
     );
 
   const searchInputClasses = classNames(
-    "px-6 py-3 mb-4 pl-8 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
+    "px-6 py-3 mb-4 pl-8 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400",
+    "sm:pl-8 sm:pr-8"
   );
 
   const answerClasses = (index) =>
