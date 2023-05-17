@@ -54,7 +54,7 @@ const FAQ = () => {
     );
 
   const searchInputClasses = classNames(
-    "w-full px-6 py-3 mb-4 pl-12 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
+    "w-full px-6 py-3 mb-4 pl-8 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
   );
   const answerClasses = (index) =>
     classNames(
@@ -76,7 +76,7 @@ const FAQ = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
             className={searchInputClasses}
           />
-          <FiSearch className="text-gray-400 absolute transform -translate-y-1/2 left-2" />
+          <FiSearch className="  text-gray-400 absolute transform -translate-y-1/2 left-2" />
         </div>
       </div>
       {filteredQuestions.length === 0 ? (
