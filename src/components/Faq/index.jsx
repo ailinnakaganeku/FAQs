@@ -42,21 +42,29 @@ const FAQ = () => {
   );
 
   const faqClasses = classNames("w-full md:w-2/3 mx-auto");
+
   const buttonClasses = classNames(
     "flex items-center justify-between w-full p-4 bg-white rounded-md shadow-md focus:outline-none cursor-pointer transition duration-200 ease-in-out hover:bg-gray-100 focus:bg-gray-100 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 select-none"
   );
+
   const arrowClasses = (index) =>
     classNames(
       "w-5 h-5 transition-transform duration-200 ease-in-out transform select-none ml-2",
       questions[index].isOpen ? "rotate-180" : ""
     );
+
   const searchInputClasses = classNames(
-    "w-full px-6 py-2 mb-4 pl-8 bg-gray-100 rounded-md focus:outline-none"
+    "w-full px-6 py-3 mb-4 pl-12 bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400"
   );
+  const answerClasses = (index) =>
+    classNames(
+      "p-4 bg-white rounded-md shadow-md mt-2",
+      questions[index].isOpen ? "block" : "hidden"
+    );
 
   return (
     <div className={faqClasses}>
-      <h2 className="text-4xl font-semibold mb-6 text-gray-800 text-center">
+      <h2 className="text-5xl font-semibold mb-8 text-gray-800 text-center">
         FAQs
       </h2>
       <div
@@ -80,7 +88,7 @@ const FAQ = () => {
       ) : (
         filteredQuestions.map((q, index) => (
           <div key={index} className="mb-4">
-            <motion.button
+            <motion.div
               className={buttonClasses}
               onClick={() => handleToggle(index)}
             >
@@ -90,15 +98,15 @@ const FAQ = () => {
               <span className={arrowClasses(index)}>
                 <FiChevronDown className="w-4 h-4 text-gray-500" />
               </span>
-            </motion.button>
+            </motion.div>
             <AnimatePresence>
               {q.isOpen && (
                 <motion.div
-                  className="p-4 mt-2 bg-white rounded-md shadow-md"
+                  className={answerClasses(index)}
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.1 }}
                 >
                   <p className="text-gray-700">{q.answer}</p>
                 </motion.div>
