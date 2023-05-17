@@ -5,18 +5,21 @@ import classNames from "classnames";
 
 const FAQ_QUESTIONS = [
   {
-    question: "Question one",
-    answer: "This is the answer to my first question.",
+    question: "What initially sparked my interest in programming?",
+    answer:
+      "My interest in programming was initially sparked as a hobby while watching YouTube videos. I started with Python tutorials and gradually honed my skills. As I discussed this passion with my friends, they sought my help in creating websites for their clothing stores using a content management system (CMS). Then, one day, I stumbled upon a course called 'Introduction to HTML5' offered by the University of Michigan. It was at that precise moment when I realized my deep desire to explore this field even further. Since then, my programming journey has continued to evolve and flourish.",
     isOpen: false,
   },
   {
-    question: "Question two",
-    answer: "This is the answer to my second question.",
+    question:
+      "What do I enjoy most about being a developer and working in the field of programming?",
+    answer:
+      "What I find most enjoyable about being a developer and working in the field of programming is the perpetual opportunity for learning and personal growth. The ever-changing landscape of technology ensures that there is always something new to explore and innovative technologies to delve into. Additionally, I truly value the flexibility and remote work options that programming offers. This allows me to maintain a healthy work-life balance and the freedom to work from anywhere in the world. Moreover, the fast-paced nature of the field excites me greatly. With technology constantly evolving, as a developer, I have the privilege of staying at the forefront of these advancements and actively contributing to shaping the future.",
     isOpen: false,
   },
   {
-    question: "Question three",
-    answer: "This is the answer to my third question.",
+    question: "How do I approach learning new programming languages or technologies?",
+    answer: "When it comes to learning new programming languages or technologies, I take a proactive approach. I begin by researching and gathering relevant resources such as YouTube tutorials, documentation, and articles. Hands-on practice is crucial to me, so I fully immerse myself in coding exercises and personal projects to apply what I learn and gain practical experience. I actively engage with programming communities through Discord server communities. This enables me to exchange knowledge, seek advice, and stay up to date with the latest trends and best practices. Collaborating with fellow developers provides valuable insights and diverse perspectives, fostering a continuous learning environment.",
     isOpen: false,
   },
 ];
