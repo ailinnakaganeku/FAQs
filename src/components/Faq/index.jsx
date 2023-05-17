@@ -28,7 +28,7 @@ const FAQ = () => {
   const toggleFAQ = (index) => {
     setQuestions((prevQuestions) =>
       prevQuestions.map((q, i) =>
-        i === index ? { ...q, isOpen: !q.isOpen } : q
+        i === index ? { ...q, isOpen: !q.isOpen } : { ...q, isOpen: false }
       )
     );
   };
@@ -59,7 +59,11 @@ const FAQ = () => {
       <h2 className="text-4xl font-semibold mb-6 text-gray-800 text-center">
         FAQs
       </h2>
-      <div className="flex items-center justify-center mb-4">
+      <div
+        className="flex items-center justify-center mb-4
+
+"
+      >
         <div className="relative flex items-center">
           <input
             type="text"
