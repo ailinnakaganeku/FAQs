@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { FiSearch, FiChevronDown } from "react-icons/fi";
 import classNames from "classnames";
 
@@ -67,11 +67,7 @@ const FAQ = () => {
       <h2 className="text-5xl font-semibold mb-8 text-gray-800 text-center">
         FAQs
       </h2>
-      <div
-        className="flex items-center justify-center mb-4
-
-"
-      >
+      <div className="flex items-center justify-center mb-4">
         <div className="relative flex items-center">
           <input
             type="text"
@@ -99,19 +95,11 @@ const FAQ = () => {
                 <FiChevronDown className="w-4 h-4 text-gray-500" />
               </span>
             </motion.div>
-            <AnimatePresence>
-              {q.isOpen && (
-                <motion.div
-                  className={answerClasses(index)}
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.1 }}
-                >
-                  <p className="text-gray-700">{q.answer}</p>
-                </motion.div>
-              )}
-            </AnimatePresence>
+            {q.isOpen && (
+              <div className={answerClasses(index)}>
+                <p className="text-gray-700">{q.answer}</p>
+              </div>
+            )}
           </div>
         ))
       )}
