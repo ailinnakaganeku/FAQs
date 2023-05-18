@@ -7,7 +7,7 @@ const FAQ_QUESTIONS = [
   {
     question: "What initially sparked my interest in programming?",
     answer:
-      "My interest in programming was initially sparked as a hobby while watching YouTube videos. I started with Python tutorials and gradually honed my skills. As I discussed this passion with my friends, they sought my help in creating websites for their clothing stores using a content management system (CMS). Then, one day, I stumbled upon a course called 'Introduction to HTML5' offered by the University of Michigan. It was at that precise moment when I realized my deep desire to explore this field even further. Since then, my programming journey has continued to evolve and flourish.",
+      "My interest in programming was initially sparked as a hobby while watching YouTube videos. I started with Python tutorials and gradually honed my skills. As I discussed this passion with my friends, they sought my help in creating websites for their clothing stores using a content management system (CMS). Then, one day, I stumbled upon a course called 'Introduction to HTML5' offered by the University of Michigan. It was at that precise moment when I realized my deep desire to explore this field even further. Since then, my programming journey has continued to evolve.",
     isOpen: false,
   },
   {
